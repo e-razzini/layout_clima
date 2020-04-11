@@ -27,11 +27,11 @@ $clima = $openWheater->getClima();
         <i class="fa fa-thermometer-full  fa-4x" aria-hidden="true"></i>  
         <h1><?php echo $clima->cidade;?> </h1>
         <h3><?php echo $clima->getData() ?></h3>
-        </div>   
+        </div>  
+        <div class="info_title">
         <h2><?php echo $clima->getTemperaturaCelsius();?>°c <?php echo "/". $clima->getTemperaturaFahrenheit(); ?>°f</h2> 
-        <br>
-      
-      <div class="info">
+        </div>       
+        <div class="info">
          <h4><?php echo $clima->descricao;?>.</h4>      
          <h4>humidade: <?php echo $clima->humidade;?>%.</h4>
          <h4><?php echo $clima->getPorDoSol()."pm";?>.</h4>
