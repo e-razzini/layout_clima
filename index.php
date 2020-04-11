@@ -33,7 +33,7 @@ $clima = $openWheater->getClima();
         </div>       
         <div class="info">
          <h4><?php echo $clima->descricao;?>.</h4>      
-         <h4>humidade: <?php echo $clima->humidade;?>%.</h4>
+         <h4>humidade:<?php echo $clima->humidade;?>%.</h4>
          <h4><?php echo $clima->getPorDoSol()."pm";?>.</h4>
          <h4><?php echo $clima->getAmanhecer()."am";?>.</h4>
          <h4><?php echo $clima->pressao;?>.</h4>

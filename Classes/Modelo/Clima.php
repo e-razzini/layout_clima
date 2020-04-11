@@ -1,7 +1,6 @@
 <?php
-
 namespace Classes\Modelo;
-
+date_default_timezone_set('America/Sao_paulo');
 use DateTime;
 
 class Clima
