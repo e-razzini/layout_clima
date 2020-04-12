@@ -25,11 +25,15 @@ $clima = $openWheater->getClima();
       <div class="card">
       <div class="title">
         <i class="fa fa-thermometer-full  fa-4x" aria-hidden="true"></i>  
+        <div class="info_title">
         <h1><?php echo $clima->cidade;?> </h1>
         <h3><?php echo $clima->getData() ?></h3>
+        </div>
         </div>  
-        <div class="info_title">
-        <h2><?php echo $clima->getTemperaturaCelsius();?>°c <?php echo "/". $clima->getTemperaturaFahrenheit(); ?>°f</h2> 
+        <div class="info_temp">
+        <h3><?php echo $clima->getTemperaturaCelsius();?>°c</h3> 
+        <h3> <?php echo $clima->getTemperaturaFahrenheit(); ?>°f</h3>
+        <h3><?php echo $clima->temperatura;?>°k</h3>
         </div>       
         <div class="info">
          <h4><?php echo $clima->descricao;?>.</h4>      
