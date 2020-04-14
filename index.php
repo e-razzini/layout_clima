@@ -17,6 +17,7 @@ $clima = $openWheater->getClima();
     <title>temperatura Brusque</title>
 </head>
 <body>
+
   <!--cidade-->
   <section>
 <div class="container-fluid" id="container">
@@ -30,12 +31,12 @@ $clima = $openWheater->getClima();
         <h3><?php echo $clima->getData() ?></h3>
         </div>
         </div>  
-        <div class="info_temp">
+      <div class="info_temp">
         <h3><?php echo $clima->getTemperaturaCelsius();?>°c</h3> 
         <h3> <?php echo $clima->getTemperaturaFahrenheit(); ?>°f</h3>
         <h3><?php echo $clima->temperatura;?>°k</h3>
         </div>       
-        <div class="info">
+      <div class="info">
          <h4><?php echo $clima->descricao;?>.</h4>      
          <h4>humidade:<?php echo $clima->humidade;?>%.</h4>
          <h4><?php echo $clima->getPorDoSol()."pm";?>.</h4>
@@ -43,6 +44,7 @@ $clima = $openWheater->getClima();
          <h4><?php echo $clima->pressao;?>.</h4>
          <h4><?php echo $clima->velocidade;?>km/h.</h4>
          <h4><?php echo $clima->getMilhas();?>m.</h4>
+         <h4><?php echo $clima->acessos;?> acess.</h4>
        </div>
        </div>
     </div>
